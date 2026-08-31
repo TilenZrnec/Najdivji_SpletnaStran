@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Izak s.p. — Kontakt</title>
+  <meta name="description" content="Kontaktni podatki in kontaktni obrazec podjetja Izak s.p." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Preskoči na vsebino</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">IZ</span>
+        <span class="brand-name">Izak <small>s.p.</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Odpri meni">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Glavna navigacija">
+        <ul>
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="storitve.html">Storitve</a></li>
+          <li><a href="o-meni.html">O meni</a></li>
+          <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <h1>Kontakt</h1>
+        <p class="lead">Pišite mi ali pokličite. Na povpraševanja odgovorim v 1–2 delovnih dneh.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Podatki</h2>
+          <p>
+            <strong>E-pošta</strong><br />
+            <a href="mailto:info@primer.si">info@primer.si</a>
+          </p>
+          <p>
+            <strong>Telefon</strong><br />
+            <a href="tel:+38640000000">+386 40 000 000</a>
+          </p>
+          <p>
+            <strong>Naslov</strong><br />
+            Ulica in hišna številka<br />
+            Poštna številka in kraj<br />
+            Slovenija
+          </p>
+          <p>
+            <strong>Podatki podjetja</strong><br />
+            Matična št.: 0000000000<br />
+            Davčna št.: SI00000000<br />
+            IBAN: SI56 0000 0000 0000 000
+          </p>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h2>Kontaktni obrazec</h2>
+          <!--
+            Stran je statična in nima strežnika. Za delujoč obrazec uporabite
+            zunanjo storitev (npr. Formspree, Web3Forms, Getform) in v atribut
+            action vpišite svoj URL. Trenutno obrazec odpre poštni odjemalec.
+          -->
+          <form
+            class="contact-form"
+            action="mailto:info@primer.si"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="field">
+              <label for="ime">Ime in priimek</label>
+              <input type="text" id="ime" name="ime" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">E-pošta</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="telefon">Telefon (neobvezno)</label>
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" />
+            </div>
+            <div class="field">
+              <label for="sporocilo">Sporočilo</label>
+              <textarea id="sporocilo" name="sporocilo" rows="6" required></textarea>
+            </div>
+            <div class="field field-check">
+              <input type="checkbox" id="soglasje" name="soglasje" required />
+              <label for="soglasje">Soglašam z obdelavo osebnih podatkov za namen odgovora na povpraševanje.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Pošlji sporočilo</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Izak s.p.</p>
+        <p>Ulica in hišna številka<br />Poštna številka in kraj<br />Slovenija</p>
+      </div>
+      <div>
+        <p class="footer-heading">Kontakt</p>
+        <p>
+          E-pošta: <a href="mailto:info@primer.si">info@primer.si</a><br />
+          Telefon: <a href="tel:+38640000000">+386 40 000 000</a>
+        </p>
+      </div>
+      <div>
+        <p class="footer-heading">Podatki podjetja</p>
+        <p>Matična št.: 0000000000<br />Davčna št.: SI00000000<br />IBAN: SI56 0000 0000 0000 000</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span data-year>2026</span> Izak s.p. Vse pravice pridržane.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

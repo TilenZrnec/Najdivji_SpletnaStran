@@ -1,0 +1,16 @@
+# Operacijski sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Urejevalniki
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dnevniki in začasne datoteke
+*.log
+node_modules/
+dist/
+.cache/

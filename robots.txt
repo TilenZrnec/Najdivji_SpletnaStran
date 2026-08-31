@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Po objavi dodajte pravi naslov:
+# Sitemap: https://www.primer.si/sitemap.xml
