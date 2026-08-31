@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Izak s.p. — Storitve</title>
-  <meta name="description" content="Pregled storitev in okvirnih cen podjetja Izak s.p." />
+  <meta name="description" content="Storitve podjetja Izak s.p.: recikliranje, odvozi, gradnja in trajnostni razvoj." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -13,20 +13,33 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Izak s.p. — domov">
         <span class="brand-mark" aria-hidden="true">IZ</span>
-        <span class="brand-name">Izak <small>s.p.</small></span>
       </a>
+
+      <p class="header-quote">
+        <span class="header-quote-text">&bdquo;Reciklaža se začne pri vsakem od nas.&ldquo;</span>
+      </p>
+
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Odpri meni">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
+
       <nav id="primary-nav" class="primary-nav" aria-label="Glavna navigacija">
         <ul>
           <li><a href="index.html">Domov</a></li>
-          <li><a href="storitve.html" aria-current="page">Storitve</a></li>
-          <li><a href="o-meni.html">O meni</a></li>
+          <li class="has-submenu">
+            <a href="storitve.html" aria-current="page">Storitve</a>
+            <ul class="submenu">
+              <li><a href="storitve.html#recikliranje">Recikliranje</a></li>
+              <li><a href="storitve.html#odvozi">Odvozi</a></li>
+              <li><a href="storitve.html#gradnja">Gradnja</a></li>
+              <li><a href="storitve.html#trajnostni-razvoj">Trajnostni razvoj</a></li>
+            </ul>
+          </li>
+          <li><a href="vizija.html">Vizija</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
@@ -37,34 +50,38 @@
     <section class="page-head">
       <div class="container">
         <h1>Storitve</h1>
-        <p class="lead">Spodaj je pregled storitev. Opise in cene prilagodite svoji dejavnosti.</p>
+        <p class="lead">Celovite rešitve na področju ravnanja z odpadki in trajnostne gradnje.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="grid grid-2">
-          <article class="card service">
-            <h2>Storitev ena</h2>
-            <p>Podroben opis storitve: kaj vključuje, za koga je primerna in kakšen je potek dela.</p>
-            <p class="price">od 00 € <span>/ enota</span></p>
-          </article>
-
-          <article class="card service">
-            <h2>Storitev dve</h2>
-            <p>Podroben opis storitve: kaj vključuje, za koga je primerna in kakšen je potek dela.</p>
-            <p class="price">od 00 € <span>/ enota</span></p>
-          </article>
-
-          <article class="card service">
-            <h2>Storitev tri</h2>
-            <p>Podroben opis storitve: kaj vključuje, za koga je primerna in kakšen je potek dela.</p>
+          <article class="card service" id="recikliranje">
+            <h2>Recikliranje</h2>
+            <p>Zbiranje, ločevanje in predelava odpadkov v ponovno uporabne surovine. Prevzem
+               za gospodinjstva, podjetja in javne ustanove.</p>
             <p class="price">po dogovoru</p>
           </article>
 
-          <article class="card service">
-            <h2>Svetovanje</h2>
-            <p>Podroben opis storitve: kaj vključuje, za koga je primerna in kakšen je potek dela.</p>
+          <article class="card service" id="odvozi">
+            <h2>Odvozi</h2>
+            <p>Reden in izreden odvoz odpadkov, najem zabojnikov ter praznjenje gradbišč in
+               objektov. Prilagojeni termini.</p>
+            <p class="price">od 00 € <span>/ odvoz</span></p>
+          </article>
+
+          <article class="card service" id="gradnja">
+            <h2>Gradnja</h2>
+            <p>Gradbena in rušitvena dela z odgovornim ravnanjem z gradbenimi odpadki,
+               ločevanjem materialov in ponovno uporabo.</p>
+            <p class="price">po dogovoru</p>
+          </article>
+
+          <article class="card service" id="trajnostni-razvoj">
+            <h2>Trajnostni razvoj</h2>
+            <p>Svetovanje za zmanjšanje količine odpadkov, uvedbo krožnih procesov in
+               doseganje okoljskih ciljev podjetja.</p>
             <p class="price">00 € <span>/ ura</span></p>
           </article>
         </div>

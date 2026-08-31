@@ -43,4 +43,29 @@
   yearEls.forEach(function (el) {
     el.textContent = year;
   });
+
+  /* ---------- Vrteče se misli o recikliranju (glava) ---------- */
+  var quoteEl = document.querySelector(".header-quote-text");
+  if (quoteEl) {
+    var quotes = [
+      "„Reciklaža se začne pri vsakem od nas.“",
+      "„Odpadek je le surovina na napačnem mestu.“",
+      "„Zemljo si izposojamo od svojih otrok.“",
+      "„Manj zavržemo, več ohranimo.“",
+      "„Ločuj danes za čistejši jutri.“",
+      "„Narava ne pozna odpadkov.“",
+      "„Vsaka reciklirana embalaža šteje.“"
+    ];
+    var qIndex = 0;
+    var FADE_MS = 600; // mora se ujemati s trajanjem prehoda v CSS
+
+    window.setInterval(function () {
+      quoteEl.classList.add("is-fading");
+      window.setTimeout(function () {
+        qIndex = (qIndex + 1) % quotes.length;
+        quoteEl.textContent = quotes[qIndex];
+        quoteEl.classList.remove("is-fading");
+      }, FADE_MS);
+    }, 8000);
+  }
 })();

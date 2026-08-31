@@ -8,14 +8,14 @@ namizne računalnike in mobilne telefone.
 
 ```
 IzakSpletnaStran/
-├── index.html        # Domača stran
-├── storitve.html     # Storitve in okvirne cene
-├── o-meni.html        # Predstavitev podjetnika
+├── index.html        # Domača stran (misli o recikliranju + »Kaj ponujamo«)
+├── storitve.html     # Storitve z zasidki: #recikliranje #odvozi #gradnja #trajnostni-razvoj
+├── vizija.html       # Vizija, vrednote in cilji podjetja
 ├── kontakt.html      # Kontaktni podatki in obrazec
 ├── css/
 │   └── style.css     # Celoten slog (mobile-first)
 ├── js/
-│   └── main.js       # Mobilna navigacija, leto v nogi
+│   └── main.js       # Mobilna navigacija, spustni meni, vrteče se misli, leto v nogi
 ├── assets/
 │   └── img/          # Slike (dodajte svoje)
 ├── favicon.svg       # Ikona zavihka
@@ -43,7 +43,7 @@ Poiščite in zamenjajte naslednje ograde (placeholder) v vseh `.html` datotekah
 - **E-pošta:** `info@primer.si`
 - **Telefon:** `+386 40 000 000` (in `tel:+38640000000`)
 - **Podatki podjetja:** matična številka, davčna številka, IBAN
-- **Besedila:** slogan, opisi storitev, cene, vsebina strani »O meni«
+- **Besedila:** opisi storitev, cene, vsebina strani »Vizija«, misli o recikliranju v `js/main.js`
 - **Slike:** nadomestite `Slika / logotip` in `Fotografija` polja z `<img>` iz `assets/img/`
 - **Barve:** spremenljivke na vrhu `css/style.css` (npr. `--color-primary`)
 

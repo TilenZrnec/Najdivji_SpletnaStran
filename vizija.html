@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Izak s.p. — O meni</title>
-  <meta name="description" content="Predstavitev podjetja Izak s.p., izkušnje in način dela." />
+  <title>Izak s.p. — Vizija</title>
+  <meta name="description" content="Vizija podjetja Izak s.p.: krožno gospodarstvo, odgovorno ravnanje z odpadki in trajnostna gradnja." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -13,20 +13,33 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Izak s.p. — domov">
         <span class="brand-mark" aria-hidden="true">IZ</span>
-        <span class="brand-name">Izak <small>s.p.</small></span>
       </a>
+
+      <p class="header-quote">
+        <span class="header-quote-text">&bdquo;Reciklaža se začne pri vsakem od nas.&ldquo;</span>
+      </p>
+
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Odpri meni">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
       </button>
+
       <nav id="primary-nav" class="primary-nav" aria-label="Glavna navigacija">
         <ul>
           <li><a href="index.html">Domov</a></li>
-          <li><a href="storitve.html">Storitve</a></li>
-          <li><a href="o-meni.html" aria-current="page">O meni</a></li>
+          <li class="has-submenu">
+            <a href="storitve.html">Storitve</a>
+            <ul class="submenu">
+              <li><a href="storitve.html#recikliranje">Recikliranje</a></li>
+              <li><a href="storitve.html#odvozi">Odvozi</a></li>
+              <li><a href="storitve.html#gradnja">Gradnja</a></li>
+              <li><a href="storitve.html#trajnostni-razvoj">Trajnostni razvoj</a></li>
+            </ul>
+          </li>
+          <li><a href="vizija.html" aria-current="page">Vizija</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
@@ -36,8 +49,8 @@
   <main id="main">
     <section class="page-head">
       <div class="container">
-        <h1>O meni</h1>
-        <p class="lead">Kratek uvod o tem, kdo ste in kaj vas odlikuje.</p>
+        <h1>Vizija</h1>
+        <p class="lead">Svet brez odpadkov — kjer vsak material dobi novo priložnost.</p>
       </div>
     </section>
 
@@ -47,29 +60,30 @@
           <div class="hero-placeholder">Fotografija</div>
         </div>
         <div class="about-text">
-          <h2>Moja zgodba</h2>
+          <h2>Kam gremo</h2>
           <p>
-            Tukaj opišite svojo poklicno pot: kdaj ste začeli, katere izkušnje ste
-            pridobili in zakaj ste se odločili za samostojno podjetniško pot.
+            Verjamemo v krožno gospodarstvo, v katerem odpadki niso breme, ampak vir.
+            Naš cilj je zapreti snovne kroge — od zbiranja in ločevanja do predelave
+            in ponovne uporabe.
           </p>
           <p>
-            V drugem odstavku predstavite svoj pristop k delu in vrednote, po katerih
-            se ravnate pri sodelovanju s strankami.
+            Vsak projekt vodimo tako, da zmanjšamo količino odloženih odpadkov in
+            povečamo delež materialov, ki se vrnejo v uporabo.
           </p>
 
-          <h2>Izkušnje</h2>
+          <h2>Vrednote</h2>
           <ul class="ticks">
-            <li>Leto+ izkušenj na področju svoje dejavnosti</li>
-            <li>Zaključeni projekti za posameznike in podjetja</li>
-            <li>Stalno izobraževanje in sledenje novostim</li>
+            <li>Odgovornost do okolja in skupnosti</li>
+            <li>Preglednost pri ravnanju z odpadki in materiali</li>
+            <li>Stalno izboljševanje in uvajanje novih praks</li>
           </ul>
 
-          <h2>Kako poteka sodelovanje</h2>
+          <h2>Cilji</h2>
           <ol class="steps">
-            <li><strong>Povpraševanje</strong> — opišete, kaj potrebujete.</li>
-            <li><strong>Ponudba</strong> — pripravim oceno obsega in cene.</li>
-            <li><strong>Izvedba</strong> — delo opravim po dogovorjenem načrtu.</li>
-            <li><strong>Predaja</strong> — pregled rezultata in zaključek.</li>
+            <li><strong>Manj odpadkov</strong> — zmanjšati količino odloženih odpadkov pri vsakem naročilu.</li>
+            <li><strong>Več predelave</strong> — povečati delež materialov, vrnjenih v uporabo.</li>
+            <li><strong>Trajnostna gradnja</strong> — vgrajevati reciklirane in obnovljive materiale.</li>
+            <li><strong>Ozaveščanje</strong> — deliti znanje s strankami in partnerji.</li>
           </ol>
         </div>
       </div>
