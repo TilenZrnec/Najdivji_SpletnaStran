@@ -3,14 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Najdivji — Domov</title>
-  <meta name="description" content="Najdivji, s.p. — recikliranje, odvozi odpadkov, gradnja in trajnostni razvoj v Sloveniji. Divje predani krožnemu gospodarstvu." />
-
-  <meta property="og:title" content="Najdivji, s.p." />
-  <meta property="og:description" content="Recikliranje, odvozi, gradnja in trajnostni razvoj." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="sl_SI" />
-
+  <title>Najdivji — Slogani</title>
+  <meta name="description" content="Skrivna stran: zbirka rekov o recikliranju podjetja Najdivji, s.p. — in mesto, kjer lahko predlagaš svojega." />
+  <meta name="robots" content="noindex" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +15,6 @@
 <body>
   <a class="skip-link" href="#main">Preskoči na vsebino</a>
 
-  <!-- ============ GLAVA / NAVIGACIJA ============ -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Najdivji — domov">
@@ -39,7 +33,7 @@
 
       <nav id="primary-nav" class="primary-nav" aria-label="Glavna navigacija">
         <ul>
-          <li><a href="index.html" aria-current="page">Domov</a></li>
+          <li><a href="index.html">Domov</a></li>
           <li class="has-submenu">
             <a href="storitve.html">Storitve</a>
             <ul class="submenu">
@@ -56,57 +50,40 @@
   </header>
 
   <main id="main">
-    <!-- ============ HERO ============ -->
-    <section class="home-hero">
+    <section class="page-head">
       <div class="container">
-        <p class="eyebrow">Odvozi &middot; gradnja &middot; trajnostni razvoj</p>
-        <h1>Naj<span class="mark">divji</span></h1>
-        <p class="lead">
-          Divje predani krožnemu gospodarstvu. Odpadke pobiramo, ločujemo in
-          vračamo v uporabo — od gospodinjstev do gradbišč po vsej Sloveniji.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:izak@najdivji.si?subject=Povpraševanje">Pošlji povpraševanje</a>
-          <a class="btn btn-ghost" href="storitve.html">Vse storitve</a>
-        </div>
+        <p class="eyebrow">Skrivna stran</p>
+        <h1>Slogani</h1>
+        <p class="lead">Reki, ki krožijo v glavi navigacije — in prostor, da dodaš svojega.</p>
       </div>
     </section>
 
-    <!-- ============ KAJ PONUJAMO ============ -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title">Kaj ponujamo</h2>
+        <h2 class="section-title">Naši reki</h2>
+        <ul class="slogan-list">
+          <li>&bdquo;Reciklaža se začne pri vsakem od nas.&ldquo;</li>
+          <li>&bdquo;Odpadek je le surovina na napačnem mestu.&ldquo;</li>
+          <li>&bdquo;Zemljo si izposojamo od svojih otrok.&ldquo;</li>
+          <li>&bdquo;Manj zavržemo, več ohranimo.&ldquo;</li>
+          <li>&bdquo;Ločuj danes za čistejši jutri.&ldquo;</li>
+          <li>&bdquo;Narava ne pozna odpadkov.&ldquo;</li>
+          <li>&bdquo;Vsaka reciklirana embalaža šteje.&ldquo;</li>
+        </ul>
 
-        <div class="services">
-          <a class="service-tile tile-odvozi" href="odvozi.html">
-            <span class="tile-num" aria-hidden="true">01</span>
-            <h3>Odvozi</h3>
-            <p>Reden in izreden odvoz odpadkov ter najem zabojnikov za dom in podjetja.</p>
-            <span class="more">Več o odvozih</span>
-          </a>
-
-          <a class="service-tile tile-gradnja" href="gradnja.html">
-            <span class="tile-num" aria-hidden="true">02</span>
-            <h3>Gradnja</h3>
-            <p>Gradbena in rušitvena dela z odgovornim ravnanjem z materiali.</p>
-            <span class="more">Več o gradnji</span>
-          </a>
-
-          <a class="service-tile tile-trajnostni-razvoj is-soon" href="trajnostni-razvoj.html">
-            <span class="soon-badge" aria-hidden="true">Kmalu</span>
-            <span class="tile-num" aria-hidden="true">03</span>
-            <h3>Trajnostni razvoj</h3>
-            <p>Svetovanje za prehod v krožno gospodarstvo. Vključuje recikliranje. Te storitve še ne izvajamo.</p>
-            <span class="more">Kaj pripravljamo</span>
-          </a>
-        </div>
-
-        <p class="note">Kliknite storitev za podroben opis in postopek sodelovanja.</p>
+        <h2>Predlagaj svoj slogan</h2>
+        <p>Vpiši ga spodaj in odprl se bo tvoj poštni odjemalec z že pripravljenim sporočilom.</p>
+        <form class="slogan-form" data-slogan-form>
+          <label for="slogan">Tvoj slogan</label>
+          <input type="text" id="slogan" name="slogan" maxlength="120" required
+                 placeholder="npr. Danes ločuj, jutri diši." />
+          <button type="submit" class="btn btn-primary">Pošlji predlog</button>
+        </form>
+        <p class="note">Brez strežnika — predlog pošlješ po e-pošti na izak@najdivji.si.</p>
       </div>
     </section>
   </main>
 
-  <!-- ============ NOGA ============ -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>

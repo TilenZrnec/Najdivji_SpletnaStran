@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Sadika, ki poganja iz zemlje">
+  <defs>
+    <filter id="t" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="12" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6"/>
+    </filter>
+  </defs>
+  <g filter="url(#t)" fill="none" stroke="#2f5d2b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- sonce -->
+    <circle cx="386" cy="78" r="30"/>
+    <path d="M386 22 V0 M386 156 V134 M330 78 H308 M464 78 H442 M346 38 L330 22 M426 38 L442 22 M346 118 L330 134 M426 118 L442 134"/>
+    <!-- zemlja -->
+    <path d="M70 300 Q240 250 410 300"/>
+    <path d="M20 314 H460"/>
+    <!-- steblo -->
+    <path d="M240 300 C233 244 246 210 240 168"/>
+    <!-- leva velika lista -->
+    <path d="M240 246 C196 224 156 232 138 262 C178 276 220 270 240 246 Z"/>
+    <path d="M240 246 L168 250"/>
+    <!-- desna velika lista -->
+    <path d="M240 214 C284 192 324 200 342 230 C302 244 260 238 240 214 Z"/>
+    <path d="M240 214 L316 218"/>
+    <!-- vršiček -->
+    <path d="M240 172 C226 150 214 142 198 146 C210 168 226 176 240 172 Z"/>
+    <path d="M240 168 C254 148 266 140 282 144 C270 166 254 174 240 168 Z"/>
+  </g>
+</svg>

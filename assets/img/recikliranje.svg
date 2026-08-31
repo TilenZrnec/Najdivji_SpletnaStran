@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Reciklažne puščice">
+  <defs>
+    <filter id="r" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+  </defs>
+  <g filter="url(#r)" fill="none" stroke="#2f5d2b" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 300 L235 100"/>
+    <path d="M260 95 L360 280"/>
+    <path d="M350 300 L120 300"/>
+  </g>
+  <g filter="url(#r)" fill="#2f5d2b">
+    <path d="M235 100 l30 6 l-6 -34 z"/>
+    <path d="M360 280 l6 -32 l26 20 z"/>
+    <path d="M120 300 l24 -22 l6 34 z"/>
+  </g>
+</svg>

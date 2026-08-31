@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Najdivji — Storitve</title>
-  <meta name="description" content="Storitve podjetja Najdivji, s.p.: recikliranje, odvozi, gradnja in trajnostni razvoj." />
+  <title>Najdivji — Trajnostni razvoj</title>
+  <meta name="description" content="Trajnostni razvoj pri Najdivji, s.p.: svetovanje in rešitve za zmanjšanje odpadkov, uvedbo krožnih procesov in doseganje okoljskih ciljev." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="theme-trajnostni-razvoj">
   <a class="skip-link" href="#main">Preskoči na vsebino</a>
 
   <header class="site-header">
@@ -38,7 +38,7 @@
             <ul class="submenu">
               <li><a href="odvozi.html">Odvozi</a></li>
               <li><a href="gradnja.html">Gradnja</a></li>
-              <li><a href="trajnostni-razvoj.html">Trajnostni razvoj</a></li>
+              <li><a href="trajnostni-razvoj.html" aria-current="page">Trajnostni razvoj</a></li>
             </ul>
           </li>
           <li><a href="vizija.html">Vizija</a></li>
@@ -48,54 +48,83 @@
     </div>
   </header>
 
-  <main id="main">
+  <div class="notice">
+    <div class="container">
+      <p>Te storitve še ne izvajamo &mdash; spodaj je opis, kaj pripravljamo.</p>
+    </div>
+  </div>
+
+  <main id="main" class="coming-soon">
     <section class="page-head">
       <div class="container">
-        <h1>Storitve</h1>
-        <p class="lead">Celovite rešitve na področju ravnanja z odpadki in trajnostne gradnje.</p>
+        <p class="eyebrow">Storitev v pripravi</p>
+        <h1>Trajnostni razvoj</h1>
+        <p class="lead">Manj odpadkov ni sreča — je načrt. Pomagali vam bomo ga narediti.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="grid grid-3">
-          <article class="card service" id="odvozi">
-            <h2>Odvozi</h2>
-            <p>Reden in izreden odvoz odpadkov, najem zabojnikov ter praznjenje gradbišč in
-               objektov. Prilagojeni termini.</p>
-            <p class="price">od 00 € <span>/ odvoz</span></p>
-            <p><a href="odvozi.html">Več o odvozih &rarr;</a></p>
-          </article>
+        <div class="grid grid-2">
+          <div>
+            <h2>Kaj delamo</h2>
+            <p>
+              Svetujemo podjetjem in skupnostim, kako zmanjšati količino odpadkov,
+              uvesti ločevanje pri viru in zapreti snovne kroge. Pogledamo, kaj
+              dejansko nastaja, kje se izgublja vrednost in kaj se da preprosto
+              spremeniti že jutri.
+            </p>
+            <p>
+              Rezultat je konkreten načrt z ukrepi, merili in časovnico — ne poročilo
+              za v predal.
+            </p>
 
-          <article class="card service" id="gradnja">
-            <h2>Gradnja</h2>
-            <p>Gradbena in rušitvena dela z odgovornim ravnanjem z gradbenimi odpadki,
-               ločevanjem materialov in ponovno uporabo.</p>
-            <p class="price">po dogovoru</p>
-            <p><a href="gradnja.html">Več o gradnji &rarr;</a></p>
-          </article>
+            <h2>Kje pomagamo</h2>
+            <ul class="ticks">
+              <li>Pregled tokov odpadkov (kaj, koliko, kam)</li>
+              <li>Načrt ločevanja pri viru in postavitev zbirnih mest</li>
+              <li>Ukrepi za zmanjšanje embalaže in zavržkov</li>
+              <li>Krožne rešitve: ponovna uporaba, popravila, izmenjava</li>
+              <li>Podpora pri okoljskih ciljih in poročanju</li>
+            </ul>
+          </div>
 
-          <article class="card service is-soon" id="trajnostni-razvoj">
-            <h2>Trajnostni razvoj</h2>
-            <p>Svetovanje za prehod v krožno gospodarstvo; vključuje tudi recikliranje.
-               <strong>Te storitve še ne izvajamo.</strong></p>
-            <p class="price">kmalu na voljo</p>
-            <p><a href="trajnostni-razvoj.html">Kaj pripravljamo &rarr;</a></p>
-          </article>
+          <div>
+            <h2>Kako poteka</h2>
+            <ol class="steps">
+              <li><strong>Uvodni pogovor</strong> — kaj želite doseči in do kdaj.</li>
+              <li><strong>Posnetek stanja</strong> — obisk, meritve, pregled tokov.</li>
+              <li><strong>Načrt ukrepov</strong> — prioritete, nosilci, merila uspeha.</li>
+              <li><strong>Uvedba</strong> — pomoč pri prvih korakih in usposabljanju ekipe.</li>
+              <li><strong>Pregled po 3–6 mesecih</strong> — kaj deluje, kaj popravimo.</li>
+            </ol>
+
+            <div class="card service">
+              <h3>Cena</h3>
+              <p class="price">kmalu na voljo</p>
+              <p>Ko storitev zaženemo, bo cena po uri ali kot paket za projekt.</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <p class="note">
-          Navedene cene so informativne in ne predstavljajo zavezujoče ponudbe.
-          Za natančen izračun pošljite povpraševanje.
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Recikliranje</h2>
+        <p>
+          Zbiranje, ločevanje in predelava odpadkov v ponovno uporabne surovine.
+          Zaenkrat je to del svetovanja o trajnostnem razvoju — samostojne storitve
+          prevzema in predelave odpadkov še ne izvajamo.
         </p>
       </div>
     </section>
 
     <section class="section cta-band">
       <div class="container cta-inner">
-        <h2>Potrebujete ponudbo?</h2>
-        <p>Opišite svoj projekt in pripravimo ponudbo brezplačno.</p>
-        <a class="btn btn-primary" href="mailto:izak@najdivji.si?subject=Povpraševanje">Pošljite povpraševanje</a>
+        <h2>Vas storitev zanima?</h2>
+        <p>Sporočite nam in obvestimo vas, ko jo zaženemo.</p>
+        <a class="btn btn-primary" href="mailto:izak@najdivji.si?subject=Trajnostni razvoj — zanimanje">Javi zanimanje</a>
       </div>
     </section>
   </main>

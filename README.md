@@ -1,6 +1,7 @@
-# Izak s.p. — spletna stran
+# Najdivji, s.p. — spletna stran
 
-Statična predstavitvena spletna stran za samostojnega podjetnika.
+Statična predstavitvena spletna stran za samostojnega podjetnika, ki se ukvarja
+z recikliranjem, odvozi odpadkov, gradnjo in trajnostnim razvojem.
 Brez zaledja (backend) — samo HTML, CSS in nekaj JavaScripta. Odzivna za
 namizne računalnike in mobilne telefone.
 
@@ -8,19 +9,24 @@ namizne računalnike in mobilne telefone.
 
 ```
 IzakSpletnaStran/
-├── index.html        # Domača stran (misli o recikliranju + »Kaj ponujamo«)
-├── storitve.html     # Storitve z zasidki: #recikliranje #odvozi #gradnja #trajnostni-razvoj
-├── vizija.html       # Vizija, vrednote in cilji podjetja
-├── kontakt.html      # Kontaktni podatki in obrazec
+├── index.html               # Domača stran (hero + klikabilne kartice storitev)
+├── storitve.html            # Pregled storitev
+├── odvozi.html              # Podstran storitve
+├── gradnja.html             # Podstran storitve
+├── trajnostni-razvoj.html   # Podstran storitve (še ni na voljo; vsebuje Recikliranje)
+├── vizija.html              # Vizija, vrednote in cilji podjetja
+├── kontakt.html             # Kontaktni podatki (seznam, brez obrazca)
+├── slogani.html             # Skrivna stran: reki + predlog slogana (klik na rek v glavi)
 ├── css/
-│   └── style.css     # Celoten slog (mobile-first)
+│   └── style.css            # Celoten slog (mobile-first)
 ├── js/
-│   └── main.js       # Mobilna navigacija, spustni meni, vrteče se misli, leto v nogi
+│   └── main.js              # Mobilna navigacija, spustni meni, vrteče se misli, leto v nogi
 ├── assets/
-│   └── img/          # Slike (dodajte svoje)
-├── favicon.svg       # Ikona zavihka
+│   ├── logo.svg             # Logotip
+│   └── img/                 # Tematske ilustracije za ozadja kartic
+├── favicon.svg              # Ikona zavihka
 ├── robots.txt
-├── .nojekyll         # Za GitHub Pages (izklop Jekyll obdelave)
+├── .nojekyll                # Za GitHub Pages (izklop Jekyll obdelave)
 └── .gitignore
 ```
 
@@ -36,26 +42,19 @@ python -m http.server 8000
 
 ## Kaj je treba prilagoditi
 
-Poiščite in zamenjajte naslednje ograde (placeholder) v vseh `.html` datotekah:
+Kontaktni podatki so že pravi (e-pošta `izak@najdivji.si`, telefon
+`+386 40 728 319`, Raskovec 28, 1360 Vrhnika; matična, davčna, IBAN).
+Ostane še:
 
-- **Ime podjetja:** `Izak s.p.` in oznaka `IZ` v logotipu
-- **Naslov:** `Ulica in hišna številka`, `Poštna številka in kraj`
-- **E-pošta:** `info@primer.si`
-- **Telefon:** `+386 40 000 000` (in `tel:+38640000000`)
-- **Podatki podjetja:** matična številka, davčna številka, IBAN
-- **Besedila:** opisi storitev, cene, vsebina strani »Vizija«, misli o recikliranju v `js/main.js`
-- **Slike:** nadomestite `Slika / logotip` in `Fotografija` polja z `<img>` iz `assets/img/`
-- **Barve:** spremenljivke na vrhu `css/style.css` (npr. `--color-primary`)
+- **Cene:** `00 €` in `po dogovoru` v `storitve.html`, `odvozi.html`, `gradnja.html`
+- **Besedila:** opisi storitev, vsebina strani »Vizija«, misli o recikliranju v `js/main.js`
+- **Slike:** po želji zamenjajte `Fotografija` polja (`.hero-placeholder`) z `<img>` iz `assets/img/`
 
-### Kontaktni obrazec
+### Kontakt
 
-Stran nima strežnika, zato obrazec privzeto odpre poštni odjemalec
-(`action="mailto:..."`). Za pravo pošiljanje uporabite brezplačno zunanjo
-storitev in vpišite njihov URL v `action`:
-
-- [Formspree](https://formspree.io/)
-- [Web3Forms](https://web3forms.com/)
-- [Getform](https://getform.io/)
+`kontakt.html` je samo seznam podatkov (brez obrazca). Gumbi
+„Pošlji povpraševanje" / „Naroči odvoz" ipd. so `mailto:izak@najdivji.si`
+povezave in odprejo poštni odjemalec.
 
 ## Objava (GitHub Pages)
 

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 44" role="img" aria-label="Reciklažne puščice">
+  <defs>
+    <g id="rk" fill="currentColor">
+      <polygon points="-12,-3.5 3,-3.5 3,-8 12,0 3,8 3,3.5 -12,3.5" transform="translate(20,31) rotate(180)"/>
+      <polygon points="-12,-3.5 3,-3.5 3,-8 12,0 3,8 3,3.5 -12,3.5" transform="translate(10.5,14.5) rotate(300)"/>
+      <polygon points="-12,-3.5 3,-3.5 3,-8 12,0 3,8 3,3.5 -12,3.5" transform="translate(29.5,14.5) rotate(60)"/>
+    </g>
+  </defs>
+  <use href="#rk" transform="translate(10,2) rotate(-5 20 22)"  style="color:#2f5d2b"/>
+  <use href="#rk" transform="translate(70,2) rotate(4 20 22)"   style="color:#c3d92e"/>
+  <use href="#rk" transform="translate(130,2) rotate(-3 20 22)" style="color:#3f7d3a"/>
+  <use href="#rk" transform="translate(190,2) rotate(5 20 22)"  style="color:#c89b5c"/>
+  <use href="#rk" transform="translate(250,2) rotate(-4 20 22)" style="color:#b06a44"/>
+  <use href="#rk" transform="translate(310,2) rotate(3 20 22)"  style="color:#7c9a2e"/>
+</svg>

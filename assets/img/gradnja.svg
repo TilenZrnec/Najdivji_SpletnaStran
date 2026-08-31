@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-label="Žerjav in zidani zid">
+  <defs>
+    <filter id="g" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.013" numOctaves="2" seed="6" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="6"/>
+    </filter>
+  </defs>
+  <g filter="url(#g)" fill="none" stroke="#7a5a1f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tla -->
+    <path d="M20 314 H460"/>
+    <!-- stolpni žerjav -->
+    <path d="M250 314 V96 M226 96 H418 M226 96 L250 60 L340 60 L370 96 M170 118 H250"/>
+    <path d="M250 314 L214 314 M250 314 L286 314"/>
+    <path d="M250 300 L228 270 L250 240 L228 210 L250 180 L228 150 L250 120"/>
+    <path d="M188 118 V150 M212 118 V150"/>
+    <path d="M360 96 V150 M360 150 H336 V182 H384 V150 Z"/>
+    <!-- zidani zid -->
+    <path d="M40 314 V232 H210 V314"/>
+    <path d="M40 273 H210 M40 253 H210 M40 293 H210
+             M82 232 V253 M124 253 V273 M166 232 V253 M82 273 V293 M124 293 V314 M166 273 V293"/>
+    <!-- gradbena čelada -->
+    <path d="M330 300 q34 -44 68 0 M320 300 H408 M356 262 V276"/>
+  </g>
+</svg>

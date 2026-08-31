@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372 100" role="img" aria-label="Najdivji">
+  <defs>
+    <filter id="rough" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.4"/>
+    </filter>
+  </defs>
+
+  <!-- trd odmaknjen senčnik -->
+  <rect x="8" y="10" width="356" height="82" rx="12" fill="#23291f"/>
+  <!-- kartonasta ploščica -->
+  <rect x="2" y="4" width="356" height="82" rx="12" fill="#f2ede0" stroke="#23291f" stroke-width="4"/>
+
+  <g filter="url(#rough)">
+    <!-- reciklažni znak -->
+    <g transform="translate(18, 11)">
+      <circle cx="32" cy="32" r="30" fill="#3f7d3a"/>
+      <path d="M32 10 A22 22 0 1 1 13 21" fill="none" stroke="#f2ede0" stroke-width="7"
+            stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 21 l-4 -13 l14 3 z" fill="#f2ede0"/>
+      <path d="M32 20 C24 26 24 40 32 46 C40 40 40 26 32 20 Z" fill="#c3d92e"
+            stroke="#23291f" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M32 24 L32 42" stroke="#23291f" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- napis -->
+    <text x="92" y="60"
+          font-family="'Arial Black', 'Archivo Black', 'Anton', Impact, system-ui, sans-serif"
+          font-size="46" font-weight="900" letter-spacing="0.5"
+          fill="#23291f">najdivji</text>
+  </g>
+</svg>

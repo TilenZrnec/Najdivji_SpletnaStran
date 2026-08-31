@@ -1,5 +1,5 @@
 /* =========================================================
-   Izak s.p. — osnovni skript
+   Najdivji, s.p. — osnovni skript
    - preklop mobilne navigacije
    - samodejno leto v nogi
    ========================================================= */
@@ -67,5 +67,24 @@
         quoteEl.classList.remove("is-fading");
       }, FADE_MS);
     }, 8000);
+  }
+
+  /* ---------- Predlog slogana (skrivna stran „Slogani“) ---------- */
+  var sloganForm = document.querySelector("[data-slogan-form]");
+  if (sloganForm) {
+    sloganForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var input = sloganForm.querySelector("input");
+      var text = ((input && input.value) || "").trim();
+      if (!text) {
+        if (input) input.focus();
+        return;
+      }
+      var url =
+        "mailto:izak@najdivji.si" +
+        "?subject=" + encodeURIComponent("Predlog slogana") +
+        "&body=" + encodeURIComponent("Moj predlog slogana:\n\n" + text);
+      window.location.href = url;
+    });
   }
 })();
